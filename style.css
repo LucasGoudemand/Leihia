@@ -1,0 +1,37 @@
+body {
+  align-items: center;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Courier New", Courier, monospace;
+}
+.form_user {
+  background-color: #15172b;
+  font-size: 19px;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 320px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.form__question {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  justify-content: space-around;
+  width: 100%;
+}
+label {
+  margin-bottom: 10px;
+}
+input[type="submit"] {
+  margin-left: 110px;
+  margin-top: 50px;
+}
+button {
+  margin-top: 30px;
+  width: 130px;
+  margin-left: 70px;
+}

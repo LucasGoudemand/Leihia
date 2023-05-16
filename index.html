@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Formulaire Leihia</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Formulaire Leihia">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <div class="container_form">
+            <form method="POST" class="form_user" enctype="multipart/form-data" id="userForm">
+
+                <div class=" form__question">
+                    <label for="firstname">Prénom: </label>
+                    <input type="text" name="firstname" id="firstname" required>
+
+                </div>
+
+                <div class="form__question">
+                    <label for="lastname">Nom: </label>
+                    <input type="text" name="lastname" id="lastname" required>
+
+                </div>
+
+                <div class="form__question">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" required>
+
+                </div>
+
+                <div class="form__question">
+                    <label for="phone">Téléphone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                </div>
+
+                <div class="form__question">
+                    <label for="profilePicture">Photo de profil:(.png ou .jpg)</label>
+                    <input type="file" id="profilePicture" name="profilePicture" accept="image/png, image/jpeg"
+                        required>
+
+                </div>
+
+                <div class="form__question">
+                    <label for="pass">Mot de passe:</label>
+                    <input type="password" id="password" name="password" minlength="8" required>
+                </div>
+
+                <div id="dynamic_FormContainer">
+                    <p>Vous pouvez rajouter des champs pour completer vos informations: Ex: Github - https://github.io
+                    </p>
+                </div>
+                <button type="button" onclick="DynamicForm()">Ajouter un champ</button>
+                <div class="form__submit">
+                    <input type="submit" value="Envoyer" id="envoyer">
+                </div>
+            </form>
+
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="./functionPool.js"></script>
+</body>
+
+</html>
